@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    border-bottom: 0.5px;
+    padding-top: 40px;
+    padding-right: 100px;
+    padding-bottom: 40px;
+    padding-left: 100px;
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar>.logo {
+    width: 178.09px;
+    height: 50px;
+}
+
+#search-box {
+    border-radius: 40px;
+    padding-left: 30px;
+    padding-right: 635px;
+    background-color: #F0F0F0;
+}
+
+.search-icon {
+    position: absolute;
+    top: 56px;
+    margin-right: 25px;
+
+
+}
+
+.search-input {
+    position: absolute;
+    top: 55px;
+    margin-left: 15px;
+    padding-right: 220px;
+    padding-bottom: 5px;
+    margin-left: 25px;
+    /* border-style: none;
+    background-color: #F0F0F0; */
+
+}
+
+.search-input>input {
+    border-style: none;
+    background-color: #F0F0F0;
+}
+
+.contact>p {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 45px;
+    text-align: center;
+    font-family: 'Montserrat'
+
+}
+
+.main {
+    background-color: #F2F0F1;
+    height: 665px;
+    width: auto;
+    display: flex;
+}
+
+.main>.left-side,
+.right-side {
+    width: 50%;
+
+}
+
+.right-side>.boy-girl-img {
+    /* top: 128px; */
+height: 41.44rem;
+    width: 70%;
+    margin-left: 70px;
+}
+
+.right-side {
+    position: relative;
+}
+
+.right-side>.vector-img1 {
+    position: absolute;
+    top: 60px;
+    right: 132px;
+    height: 99px;
+    width: 104px;
+}
+
+.right-side>.vector-img2 {
+    position: absolute;
+    top: 198px;
+    left: 90px;
+    height: 53px;
+    width: 56px;
+}
+
+.left-side {
+    padding: 64px 41px 324px 97px;
+    margin: 0px 10px 20px 20px;
+}
+
+#heading {
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 64px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    font-family: 'Montserrat'
+}
+
+.r-side-para {
+    padding: 29px 56px 19px 4px;
+    font-weight: 400;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    line-height: 32px;
+
+    /* margin: 20px 10px 20px 20px; */
+}
+
+.shop-now-btn {
+    padding: 16px 64px 16px 64px;
+    gap: 12px;
+    border-radius: 64px;
+    background-color: #000000;
+    color: white;
+    border-style: none;
+    margin-top: 20px;
+}
+
+.review {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.review>div>h3 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+
+.review>div>p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    color: #000000;
+    opacity: 60%;
+    font-family: 'Montserrat';
+}
+
+.intro {
+    font-family: 'Montserrat';
+    font-weight: bolder;
+    font-size: 30px;
+    /* line-height: 32px; */
+    color: #000000;
+    position: absolute;
+    top: 184px;
+    left: 100px;
+    gap: 70px;
+}
+
+.style-section {
+    background-color: #F0F0F0;
+    margin: 30px 45px 30px 45px;
+    padding: 45px 30px 45px 30px;
+}
+
+.style-section>h1 {
+    text-align: center;
+}
+
+.first-row {
+    display: flex;
+    margin: 20px 1px 0px 0px;
+}
+
+.first-row>#img1 {
+    width: 40%;
+    height: 350px;
+    padding: 10px;
+}
+
+.first-row>#img2 {
+    width: 60%;
+    height: 350px;
+    padding: 10px;
+}
+
+.second-row {
+    display: flex;
+    margin: 0px 1px 15px 0px;
+}
+
+.second-row>#img3 {
+    width: 60%;
+    height: 350px;
+    padding: 10px;
+}
+
+.second-row>#img4 {
+    width: 40%;
+    height: 350px;
+    padding: 10px;
+}
+
+.category-btn {
+    text-align: center;
+}
+
+.category-btn>button {
+    border-radius: 62px;
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+    padding: 16px 54px 16px 54px;
+    gap: 12px;
+}
+
+.new-arrival-section {
+    margin: 00px 45px 0px 45px;
+    padding: 45px 30px 45px 30px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.new-arrival-section>h1 {
+    text-align: center;
+}
+
+.arrival-section-photos {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+.arrival1>img {
+    width: 325px;
+    height: 298px;
+    border-radius: 20px;
+    background-color: #F0EEED;
+    margin-right: 20px;
+}
+
+.arrival2>img {
+    width: 325px;
+    height: 298px;
+    border-radius: 20px;
+    background-color: #F0EEED;
+    margin-right: 20px;
+}
+
+.arrival3>img {
+    width: 325px;
+    height: 298px;
+    border-radius: 20px;
+    background-color: #F0EEED;
+    margin-right: 20px;
+}
+
+.arrival4>img {
+    width: 325px;
+    height: 298px;
+    border-radius: 20px;
+    background-color: #F0EEED;
+    margin-right: 20px;
+}
+
+.star-section>.product-name{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-top: 20px;
+        margin-bottom: 15px;
+    
+}
+.star-section>.rate{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.star-margin{
+        margin-right: 6px;
+}
+.star-section >p.rate> .strike-price{
+    opacity: 40%;
+}
+.discout{
+    padding: 4px 14px 2px 14px;
+    border-radius: 62px;
+    background-color: rgba(255,51,51,0.3);
+    color: #FF3333;
+    border: none;
+}
+.view-details-btn{
+    padding: 10px 90px 10px 90px;
+    gap: 12px;
+    border-radius: 62px;
+    background-color: #000000;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+}
+.view-d-btn-m{
+    margin-top: 3px;
+}
+.arrival-btn{
+    text-align: center;
+}
+.arrival-btn>button{
+    border-radius: 62px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        /* opacity: 10%; */
+        background-color: #FFFFFF;
+        padding: 16px 64px 16px 64px;
+        gap: 12px;
+}
+.arrow-corner{
+    gap: 10px;
+    display: flex;
+    align-items: end;
+}
+.arrow-corner > img{
+    width: 24px;
+    height: 24px;
+    background-color: #F0F0F0;
+    border-radius: 2px;
+
+}.container5{
+    margin: 35px 65px 0px 65px;
+}
+
+.happy-cus-section{
+    display: flex;
+    justify-content: space-between;
+    }
+.happy-cus-section > h1{
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+.customer-reivew-section{
+    justify-content: space-between;
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+.review-of-customers{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    width: 400px;
+    height: 240px;
+    padding: 28px 32px 28px 32px;
+}
+.review-of-customers > h4{
+    font-family: 'Montserrat';
+        font-size: 20px;
+            font-weight: 700;
+            line-height: 2;
+}
+.review-of-customers>p{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    color:rgba(0, 0, 0, 0.6);
+}
+.footer{
+    background-color: #F0F0F0;
+}
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 70px 25px 70px;
+}
+.logo{
+    width: 178.09px;
+    height: 50px;
+}
+.footer >.about> .about-content{
+    display: flex;
+    gap: 30px;
+}
+.social-contact{
+    display: flex;
+    gap: 30px;
+}
+.social-contact > span{
+    border: 0.65px solid rgba(0, 0, 0, 0.2);
+    background-color: #FFFFFF;
+    padding: 10px 12px 10px 12px;
+    border-radius: 21px;
+        }
+    .copy-right-content > p{
+        text-align: center;
+        padding: 30px;
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 0%;
+            
+    }
