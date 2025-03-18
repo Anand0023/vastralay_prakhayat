@@ -1,0 +1,128 @@
+body{
+    width: 100%;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    border-bottom: 0.5px;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.navbar>.logo {
+    width: 11em;
+    height: 3em;
+}
+.contact{
+    font-size: 1.6em;
+    text-align: center;
+}
+#search-box {
+    border-radius: 62px;
+    padding: 0.8em 12em 0.8em 3em;
+    background-color: #F0F0F0;
+    position: relative;
+}
+.search-icon {
+    position: absolute;
+    left:1.2rem;
+    top: 0.9rem;
+}
+
+.search-input>input {
+    border-style: none;
+    background-color: #F0F0F0;
+}
+.main {
+    background-color: #F2F0F1;
+    width: 100%;
+    display: flex;
+}
+.left-side{
+    width: 50%;
+    padding: 3% 0% 0% 5%;
+    align-items: flex-start;
+}
+.right-side{
+    width: 50%;
+    position: relative;
+    padding: 0% 0% 0% 5%;
+}
+.right-side>.boy-girl-img {
+    width:85%;
+    height: 80vh;
+}
+.vector-img1,
+.vector-img2 {
+    position: absolute;
+}
+.vector-img1 {
+    top: 6rem;
+    right: 4rem;
+    width: 6rem;
+}
+.vector-img2 {
+    top: 17rem;
+    left: 5rem;
+    width: 3rem;
+}
+#heading {
+    font-size: 5rem;
+    margin-bottom: 0;
+    margin-top: 0;
+    line-height: 5rem;
+    letter-spacing: 0%;
+    /* vertical-align: middle; */
+    /* margin: 1rem 2rem; */
+}
+.r-side-para {
+    font-weight: 400;
+    margin-top: 1rem;
+    font-family: 'Montserrat';
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+    color: #000000;
+    opacity: 60%;
+    
+}
+.shop-now-btn {
+    padding: 1.2rem 5rem;
+    border-radius: 64px;
+    background-color: #000000;
+    color: white;
+    border-style: none;
+    margin-top: 4rem;
+}
+.review {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+    margin-top: 4rem;
+    /* margin-left: 4.7rem; */
+}
+.review>div {
+    margin-right: 2rem;
+}
+
+.review>div>h3 {
+    font-weight: 700;
+    margin-bottom: 0px;
+    font-size: 2rem;
+    /* line-height: 100%; */
+    letter-spacing: 0%;
+    /* vertical-align: middle; */
+}
+
+.review>div>p {
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 0px;
+    /* line-height: 16px; */
+    letter-spacing: 0%;
+    color: #000000;
+    opacity: 60%;
+    font-family: 'Montserrat';
+}

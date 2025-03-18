@@ -1,5 +1,5 @@
-/* General styles for all screen sizes */
-* {
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,37 +8,37 @@
     border-bottom: 0.5px;
     padding: 20px;
     gap: 10px;
+    display: block;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+.fa-solid,
+.fas {
+    font-weight: 900;
+    position: absolute;
+    bottom: 1.2rem;
 }
 
 .navbar>.logo {
     width: 178.09px;
     height: 50px;
 }
-
 #search-box {
-    border-radius: 40px;
-    padding: 10px 20px;
+    border-radius: 62px;
+    padding: 2em 12em 2em 4em;
     background-color: #F0F0F0;
+    position: relative;
 }
-
 .search-icon {
     position: absolute;
-    top: 56px;
-    margin-right: 25px;
+    top:57px;
 }
-
 .search-input {
-    position: absolute;
-    top: 55px;
-    margin-left: 15px;
-    padding-right: 220px;
-    padding-bottom: 5px;
-    margin-left: 25px;
+    /* padding-left: 20px; */
+    padding-left: 25px;
+        padding-top: 3px;
 }
-
 .search-input>input {
     border-style: none;
     background-color: #F0F0F0;
@@ -76,8 +76,8 @@
     position: relative;
 }
 
-.right-side>.vector-img1,
-.right-side>.vector-img2 {
+.vector-img1,
+.vector-img2 {
     position: absolute;
 }
 
@@ -87,12 +87,13 @@
 }
 
 #heading {
-    font-weight: 900;
+    font-weight: bolder;
     font-size: 64px;
     line-height: 64px;
     letter-spacing: 0%;
     vertical-align: middle;
     font-family: 'Montserrat';
+    margin: 1rem 83px;
 }
 
 .r-side-para {
@@ -101,7 +102,9 @@
     font-family: 'Montserrat';
     font-size: 20px;
     line-height: 32px;
-}
+    margin: 0px 70px 0px 60px;
+    }
+
 
 .shop-now-btn {
     padding: 16px 64px;
@@ -110,7 +113,8 @@
     background-color: #000000;
     color: white;
     border-style: none;
-    margin-top: 20px;
+    margin-top: 1.5rem;
+    margin-left: 4.7rem;
 }
 
 .review {
@@ -118,6 +122,7 @@
     justify-content: space-between;
     margin-top: 70px;
     flex-wrap: wrap;
+    margin-left: 4.7rem;
 }
 
 .review>div>h3 {
@@ -188,9 +193,8 @@
 }
 
 .new-arrival-section {
-    margin: 0 45px;
-    padding: 45px 30px;
     border-bottom: 1px solid rgba(0,0,0,0.1);
+    width: 100%;
 }
 
 .new-arrival-section>h1 {
@@ -199,6 +203,7 @@
 
 .arrival-section-photos {
     display: flex;
+    justify-content: space-around;
     margin-top: 20px;
     margin-bottom: 35px;
     flex-wrap: wrap;
@@ -208,11 +213,12 @@
 .arrival2>img,
 .arrival3>img,
 .arrival4>img {
-    width: 100%;
+    
     height: auto;
     border-radius: 20px;
     background-color: #F0EEED;
     margin-bottom: 20px;
+    width: 13rem;
 }
 
 .star-section>.product-name,
@@ -346,7 +352,7 @@
 }
 
 .logo {
-    width: 178.09px;
+    width: 10em;
     height: 50px;
 }
 
@@ -376,78 +382,5 @@
     letter-spacing: 0%;
 }
 
-/* Media queries for responsiveness */
-@media (min-width: 768px) {
-    .main>.left-side,
-    .right-side {
-        width: 50%;
-    }
 
-    .first-row>#img1 {
-        width: 40%;
-    }
 
-    .first-row>#img2 {
-        width: 60%;
-    }
-
-    .second-row>#img3 {
-        width: 60%;
-    }
-
-    .second-row>#img4 {
-        width: 40%;
-    }
-
-    .arrival-section-photos {
-        flex-wrap: nowrap;
-    }
-
-    .arrival1>img,
-    .arrival2>img,
-    .arrival3>img,
-    .arrival4>img {
-        width: 325px;
-        height: 298px;
-        margin-right: 20px;
-    }
-
-    .review-of-customers {
-        width: 400px;
-        height: 240px;
-    }
-}
-
-@media (min-width: 1024px) {
-    .navbar {
-        padding: 40px 100px;
-    }
-
-    .main {
-        height: 665px;
-    }
-
-    .left-side {
-        padding: 64px 41px 324px 97px;
-    }
-
-    .right-side>.boy-girl-img {
-        height: 41.44rem;
-        width: 70%;
-        margin-left: 70px;
-    }
-
-    .right-side>.vector-img1 {
-        top: 60px;
-        right: 132px;
-        height: 99px;
-        width: 104px;
-    }
-
-    .right-side>.vector-img2 {
-        top: 198px;
-        left: 90px;
-        height: 53px;
-        width: 56px;
-    }
-}
