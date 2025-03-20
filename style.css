@@ -1,147 +1,3 @@
-/* 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.navbar {
-    border-bottom: 0.5px;
-    padding: 20px;
-    gap: 10px;
-    display: block;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.fa-solid,
-.fas {
-    font-weight: 900;
-    position: absolute;
-    bottom: 1.2rem;
-}
-
-.navbar>.logo {
-    width: 178.09px;
-    height: 50px;
-}
-#search-box {
-    border-radius: 62px;
-    padding: 2em 12em 2em 4em;
-    background-color: #F0F0F0;
-    position: relative;
-}
-.search-icon {
-    position: absolute;
-    top:57px;
-}
-.search-input {
-    /* padding-left: 20px; */
-    /* padding-left: 25px;
-        padding-top: 3px;
-}
-.search-input>input {
-    border-style: none;
-    background-color: #F0F0F0;
-}
-
-.contact>p {
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 45px;
-    text-align: center;
-    font-family: 'Montserrat';
-}
-
-.main {
-    background-color: #F2F0F1;
-    height: auto;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.main>.left-side,
-.right-side {
-    width: 100%;
-    padding: 20px;
-}
-
-.right-side>.boy-girl-img {
-    height: auto;
-    width: 100%;
-    margin-left: 0;
-}
-
-.right-side {
-    position: relative;
-}
-
-.vector-img1,
-.vector-img2 {
-    position: absolute;
-}
-
-.left-side {
-    padding: 20px;
-    margin: 0;
-}
-
-#heading {
-    font-weight: bolder;
-    font-size: 64px;
-    line-height: 64px;
-    letter-spacing: 0%;
-    vertical-align: middle;
-    font-family: 'Montserrat';
-    margin: 1rem 83px;
-}
-
-.r-side-para {
-    padding: 20px;
-    font-weight: 400;
-    font-family: 'Montserrat';
-    font-size: 20px;
-    line-height: 32px;
-    margin: 0px 70px 0px 60px;
-    }
-
-
-.shop-now-btn {
-    padding: 16px 64px;
-    gap: 12px;
-    border-radius: 64px;
-    background-color: #000000;
-    color: white;
-    border-style: none;
-    margin-top: 1.5rem;
-    margin-left: 4.7rem;
-}
-
-.review {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 70px;
-    flex-wrap: wrap;
-    margin-left: 4.7rem;
-}
-
-.review>div>h3 {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    vertical-align: middle;
-}
-
-.review>div>p {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 0%;
-    color: #000000;
-    opacity: 60%;
-    font-family: 'Montserrat';
-} */ */
 body {
     width: 100%;
     font-family: Arial, sans-serif;
@@ -230,10 +86,7 @@ body {
     font-size: 5rem;
     margin-bottom: 0;
     margin-top: 0;
-    /* line-height: 5rem; */
     letter-spacing: 0%;
-    /* vertical-align: middle; */
-    /* margin: 1rem 2rem; */
 }
 
 .r-side-para {
@@ -261,7 +114,6 @@ body {
     grid-template-columns: auto auto auto auto;
     justify-content: space-between;
     margin-top: 2rem;
-    /* margin-left: 4.7rem; */
 }
 
 .review>div {
@@ -272,31 +124,18 @@ body {
     font-weight: 700;
     margin-bottom: 0px;
     font-size: 2rem;
-    /* line-height: 100%; */
     letter-spacing: 0%;
-    /* vertical-align: middle; */
 }
 
 .review>div>p {
     font-weight: 400;
     font-size: 12px;
     margin-top: 0px;
-    /* line-height: 16px; */
     letter-spacing: 0%;
     color: #000000;
     opacity: 60%;
     font-family: 'Montserrat';
 }
-/* .intro {
-    font-family: 'Montserrat';
-    font-weight: bolder;
-    font-size: 3em;
-    color: #000000;
-    position: absolute;
-    top: 184px;
-    left: 100px;
-    gap: 70px;
-} */
 
 .style-section {
     background-color: #F0F0F0;
@@ -304,7 +143,7 @@ body {
     padding: 2em 1em;
 }
 
-.style-section>h1 {
+.style-section>h2 {
     text-align: center;
 }
 
@@ -353,7 +192,7 @@ body {
     
 }
 
-.new-arrival-section>h1 {
+.new-arrival-section>h2 {
     text-align: center;
 }
 
@@ -389,6 +228,9 @@ body {
 
 .star-margin {
     margin-right: 6px;
+}
+.strike-price{
+    text-decoration: line-through;
 }
 
 .star-section >p.rate> .strike-price {
@@ -457,7 +299,7 @@ body {
     margin: 1em 3em 1em 3em;
 }
 
-.happy-cus-section > h1 {
+.happy-cus-section > h2 {
     font-family: 'Montserrat';
     font-weight: 900;
     font-size: 48px;

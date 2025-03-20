@@ -88,10 +88,7 @@
             font-size: 3.4em;
             margin-bottom: 0;
             margin-top: 0;
-            /* line-height: 4em; */
             letter-spacing: 0%;
-            /* vertical-align: middle; */
-            /* margin: 1em 2em; */
         }
     
         .r-side-para {
@@ -168,7 +165,6 @@
     font-size: 2.5em;
     margin-bottom: 0;
     margin-top: 0;
-    /* line-height: 2.5em; */
   }
   .right-side>.boy-girl-img{
     width: 100%;
@@ -245,7 +241,6 @@
     #heading {
     font-size: 2.9em;
     width: 90%;
-    /* line-height: 4em; */
     }
     .right-side {
         width: 100%;
@@ -362,7 +357,6 @@
     }
     #heading {
         font-size: 2.6em;
-        /* line-height: 3em; */
         width: 90%;
     }
     .r-side-para {
@@ -375,7 +369,6 @@
     .left-side{
         width: 100%;
         padding: 0;
-        /* padding-left: 1.4em; */
     }
     .shop-now-btn{
         padding: 1em 6em 1em 6em;
@@ -386,11 +379,10 @@
 }
 @media screen and (max-width: 320px){
     #search-box {
-        padding-right: 4.4em;
+        display: none;
     }
     #heading {
         font-size: 2.2em;
-        /* line-height: 2.5em; */
     }
                 .arrival1>img,
                 .arrival2>img,
@@ -409,21 +401,27 @@
         .view-details-btn {
             padding: 0.4em 4em;
         }
-                .star-section>.product-name,
-                .star-section>.rate {
-                    font-size: 1.4em;
-                    margin-top: 0;
-                }
-        .happy-cus-section>h1 {
-            font-size: 2.6rem;
-        }
-        .vector-img1 {
-            top: 4em;
-            right: 3em;
-            width: 3em;
-                }
+        .star-section>.product-name,
+        .star-section>.rate {
+        font-size: 1.4em;
+        margin-top: 0;
+    }
+    .happy-cus-section>h1 {
+        font-size: 1rem;
+    }
+    .vector-img1 {
+        top: 4em;
+        right: 3em;
+        width: 3em;
+    }
 
-        .vector-img2 {
-                            top: 9em;
-                        }
+    .vector-img2 {
+        top: 9em;
+    }
+.arrow-corner {
+    display: none;
+}
+.copyright-content{
+        font-size: 0.5em;
+}
 }
