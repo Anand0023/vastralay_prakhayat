@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>Hello, world!</title>
+    <style>
+      nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+      }
+      header nav img{
+        width: 50%;
+      }
+      header nav input {
+        width: 60%;
+        padding: 12px 16px;
+        gap: 12px;
+        border-radius: 40px;
+        background: #f0f0f0;
+    }
+      .main{
+        font-family: "Montserrat";
+      }
+      .btn-pd {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 21.6px;
+        color: #ffffff;
+        padding: 16px 56px;
+        gap: 12px;
+        border: none;
+        border-radius: 62px;
+        opacity: 1;
+        background-color: #000000;
+      }
+      .background {
+        width: 100%;
+        background-color: #f2f2f2;
+      }
+      .review {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 2rem;
+      }
+      .content h1 {
+        margin-top: 25px;
+        gap: 0px;
+        opacity: 1;
+        font-size: 55px;
+        font-weight: 900;
+        line-height: 64px;
+        color: #000000;
+      }
+      .content > p {
+        font-size: 1.5em;
+        font-weight: 400;
+        line-height: 32px;
+        gap: 0px;
+        opacity: 0.6;
+        padding-top: 20px;
+      }
+      .style {
+        margin-top: 50px;
+    text-align: center;
+    padding: 30px 64px;
+    border-radius: 20px 20px 20px 20px;
+    opacity: 1;
+    background-color: #f0f0f0;
+}
+.style h2{
+  margin-bottom: 20px;
+    font-size: 48px;
+    font-weight: 900;
+    color: #000000;
+}
+.category img {
+    border: 1px solid #2e2e2e96;
+    border-radius: 20px;
+    height: 250px;
+}
+.new-arrival h2 {
+    margin-bottom: 20px;
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+    color: #000000;
+}
+.rate{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.discount {
+  font-size: 15px;
+    padding: 2px 14px;
+    border-radius: 62px;
+    background-color: rgba(255,51,51,0.3);
+    color: #FF3333;
+    border: none;
+}
+.strike-price{
+    text-decoration: line-through;
+}
+
+.strike-price {
+    opacity: 40%;
+}
+
+.view-details-btn{
+    padding: 10px 50px 10px 50px;
+    border-radius: 64px;
+    background-color: #000000;
+    color: white;
+    border-style: none;
+}
+
+.arrow-corner > img {
+    width: 30px;
+    height: 30px;
+    background-color: #F0F0F0;
+    border-radius: 2px;
+}
+.happy-cus-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.happy-cus-section h1{
+  margin-bottom: 0;
+}
+.customer-reivew-section {
+    /* justify-content: space-between;
+    display: flex; */
+    margin-bottom: 60px;
+}
+  .review-of-customers {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    width: 30%;
+    height: auto;
+    padding: 28px 32px;
+    margin:2em 0;
+}
+.logo {
+    width: 10em;
+    height: 50px;
+}
+.footer{
+  justify-content: space-between;
+}
+.social-contact > span {
+    border: 0.65px solid rgba(0, 0, 0, 0.2);
+    background-color: #FFFFFF;
+    padding: 10px 12px;
+    border-radius: 21px;
+}
+ 
+ @media screen and (max-width:768px) {
+    .product-details > .product-name {
+        font-size: 0.8em;
+    }
+    .rate{
+      font-size:0.9em;
+    }
+    .discount{
+      font-size: 0.7em;
+    }
+    .view-details-btn{
+      font-size: 0.6em;
+    }
+    .category img{
+          width: 100%;
+    }
+ }
+    </style>
+  </head>
+
+  <body>
+    <header class="container-fluid">
+      <nav class="container">
+        <a href="#"><img src="assets/images/Group 21.png" alt="Logo"></a>
+        <div id="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" placeholder="Search for products..." />
+        </div>
+          <a href="#">Contact Us</a>
+        </div>
+      </nav>
+    </header>
+    <div class="main">
+      <div class="background">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-12">
+              <div class="content">
+                <h1 class="mt-5">FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
+                <p>
+                  Browse through our diverse range of meticulously crafted
+                  garments, designed to bring out your individuality and cater
+                  to your sense of style.
+                </p>
+                <button type="button" class="btn btn-dark text-white btn-pd">
+                  Shop Now
+                </button>
+                <div class="review d-flex">
+                  <div>
+                    <h3>200+</h3>
+                    <p>International Brands</p>
+                  </div>
+                  <div>
+                    <h3>2000+</h3>
+                    <p>High Quality Products</p>
+                  </div>
+                  <div>
+                    <h3>30000+</h3>
+                    <p>Happy Customers</p>
+                  </div>
+                  <div>
+                    <h3>30000+</h3>
+                    <p>Happy Customers</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-12 d-flex justify-content-center">
+              <img src="assets/images/boy-girl img.jpg" width="70% "
+              alt="girl-boy-image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="conatainer-fluid">
+      <div class="container style">
+        <h2 class="header">
+          BROWSE BY DRESS STYLE
+        </h2>
+  <div class="row d-flex category">
+  <div class="col-lg-5 col-12 mb-3">
+    <img src="assets/images/casual.png" alt="casual-img" class="img-fluid">
+  </div>
+  <div class="col-lg-7 col-12 mb-3">
+    <img src="assets/images/formal.png" alt="formal-img" class="img-fluid">
+  </div>
+</div>
+<div class="row d-flex category">
+  <div class="col-lg-7 col-12 mb-3">
+    <img src="assets/images/party.png" alt="party-img" class="img-fluid">
+  </div>
+  <div class="col-lg-5 col-12 mb-3">
+    <img src="assets/images/gym.png" alt="gym-img" class="img-fluid">
+  </div>
+</div>
+      </div>
+      
+    </div>
+    <div class="container-fluid">
+      <div class="container new-arrival">
+        <h2>NEW ARRIVALS</h2>
+        <div class="row">
+
+            <div class="col-md-3 col-sm-6 mb-4">
+                <img src="assets/images/b-tshirt.png" alt="Image 1" class="img-fluid">
+                <div class="product-details">
+                  <p class="product-name">T-SHIRT WITH TAPE DETAILS</p>
+                  <span>
+                <i
+                  class="star-margin fa-sharp fa-solid fa-star"
+                  style="color: #ffd43b"
+                ></i>
+                <i
+                  class="star-margin fa-sharp fa-solid fa-star"
+                  style="color: #ffd43b"
+                ></i>
+                <i
+                  class="star-margin fa-sharp fa-solid fa-star"
+                  style="color: #ffd43b"
+                ></i>
+                <i
+                  class="star-margin fa-sharp fa-solid fa-star"
+                  style="color: #ffd43b"
+                ></i>
+                <i
+                  class="star-margin fa-sharp fa-solid fa-star-half"
+                  style="color: #ffd43b"
+                ></i>
+                <span>4.5/5</span>
+              </span>
+              <p class="rate">&#36;120</p>
+              <button class="view-details-btn">View Details</button>
+              </div>
+              </div>
+            
+            
+            <div class="col-md-3 col-sm-6 mb-4">
+                <img src="assets/images/b-jeans.png" alt="Image 2" class="img-fluid">
+                <div class="product-details">
+                <p class="product-name">SKINNY FIT JEANS</p>
+                <span>
+                <i
+                  class="star-margin fa-sharp fa-solid fa-star"
+                  style="color: #ffd43b"
+                ></i>
+                <i
+                  class="star-margin fa-sharp fa-solid fa-star"
+                  style="color: #ffd43b"
+                ></i>
+                <i
+                  class="star-margin fa-sharp fa-solid fa-star"
+                  style="color: #ffd43b"
+                ></i>
+                <i
+                  class="star-margin fa-sharp fa-solid fa-star"
+                  style="color: #ffd43b"
+                ></i>
+                <i
+                  class="star-margin fa-sharp fa-solid fa-star-half"
+                  style="color: #ffd43b"
+                ></i>
+                <span>4.5/5</span>
+              </span>
+                <p class="rate">
+                &#36;240 <strike class="strike-price">&#36;260</strike>
+                <button class="discount">-20%</button>
+              </p>
+              </p>
+              <button class="view-details-btn">View Details</button>
+               </div>
+            </div>
+            
+        
+            
+            <!-- Third Image -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <img src="assets/images/shirt.png" alt="Image 3" class="img-fluid">
+                <div class="product-details">
+                <p class="product-name">CHECKERED SHIRT</p>
+                <span>
+                <i
+                  class="star-margin fa-sharp fa-solid fa-star"
+                  style="color: #ffd43b"
+                ></i>
+                <i
+                  class="star-margin fa-sharp fa-solid fa-star"
+                  style="color: #ffd43b"
+                ></i>
+                <i
+                  class="star-margin fa-sharp fa-solid fa-star"
+                  style="color: #ffd43b"
+                ></i>
+                <i
+                  class="star-margin fa-sharp fa-solid fa-star"
+                  style="color: #ffd43b"
+                ></i>
+                <i
+                  class="star-margin fa-sharp fa-solid fa-star-half"
+                  style="color: #ffd43b"
+                ></i>
+                <span>4.5/5</span>
+              </span>
+              <p class="rate">&#36;120</p>
+               <button class="view-details-btn">View Details</button>
+                </div>
+            </div>
+           
+            
+            <!-- Fourth Image -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <img src="assets/images/o-tshirt.png" alt="Image 4" class="img-fluid">
+                <div class="product-details">
+                <p class="product-name">SLEEVE STRIPED T-SHIRT</p>
+                <span>
+                <i
+                  class="star-margin fa-sharp fa-solid fa-star"
+                  style="color: #ffd43b"
+                ></i>
+                <i
+                  class="star-margin fa-sharp fa-solid fa-star"
+                  style="color: #ffd43b"
+                ></i>
+                <i
+                  class="star-margin fa-sharp fa-solid fa-star"
+                  style="color: #ffd43b"
+                ></i>
+                <i
+                  class="star-margin fa-sharp fa-solid fa-star"
+                  style="color: #ffd43b"
+                ></i>
+                <i
+                  class="star-margin fa-sharp fa-solid fa-star-half"
+                  style="color: #ffd43b"
+                ></i>
+                <span>4.5/5</span>
+              </span>
+              <p class="rate">
+                &#36;240 <strike class="strike-price">&#36;260</strike>
+                <button class="discount">-20%</button>
+              </p>
+              <button class="view-details-btn">View Details</button>
+               </div>
+            </div>
+            
+        </div>
+
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="container new-arrival">
+        <h2>TOP SELLING ITEMS</h2>
+        <div class="row">
+          <div class="col-md-3 col-sm-6 mb-4">
+                <img src="assets/images/shirt.png" alt="Image 3" class="img-fluid">
+                <div class="product-details">
+                <p class="product-name">CHECKERED SHIRT</p>
+                <span>
+                <i
+                  class="star-margin fa-sharp fa-solid fa-star"
+                  style="color: #ffd43b"
+                ></i>
+                <i
+                  class="star-margin fa-sharp fa-solid fa-star"
+                  style="color: #ffd43b"
+                ></i>
+                <i
+                  class="star-margin fa-sharp fa-solid fa-star"
+                  style="color: #ffd43b"
+                ></i>
+                <i
+                  class="star-margin fa-sharp fa-solid fa-star"
+                  style="color: #ffd43b"
+                ></i>
+                <i
+                  class="star-margin fa-sharp fa-solid fa-star-half"
+                  style="color: #ffd43b"
+                ></i>
+                <span>4.5/5</span>
+              </span>
+              <p class="rate">&#36;120</p>
+               <button class="view-details-btn">View Details</button>
+                </div>
+            </div>
+           
+            
+            <!-- Fourth Image -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <img src="assets/images/o-tshirt.png" alt="Image 4" class="img-fluid">
+                <div class="product-details">
+                <p class="product-name">SLEEVE STRIPED T-SHIRT</p>
+                <span>
+                <i
+                  class="star-margin fa-sharp fa-solid fa-star"
+                  style="color: #ffd43b"
+                ></i>
+                <i
+                  class="star-margin fa-sharp fa-solid fa-star"
+                  style="color: #ffd43b"
+                ></i>
+                <i
+                  class="star-margin fa-sharp fa-solid fa-star"
+                  style="color: #ffd43b"
+                ></i>
+                <i
+                  class="star-margin fa-sharp fa-solid fa-star"
+                  style="color: #ffd43b"
+                ></i>
+                <i
+                  class="star-margin fa-sharp fa-solid fa-star-half"
+                  style="color: #ffd43b"
+                ></i>
+                <span>4.5/5</span>
+              </span>
+              <p class="rate">
+                &#36;240 <strike class="strike-price">&#36;260</strike>
+                <button class="discount">-20%</button>
+              </p>
+              <button class="view-details-btn">View Details</button>
+               </div>
+            </div>
+            
+            <div class="col-md-3 col-sm-6 mb-4">
+                <img src="assets/images/b-tshirt.png" alt="Image 1" class="img-fluid">
+                <div class="product-details">
+                  <p class="product-name">T-SHIRT WITH TAPE DETAILS</p>
+                  <span>
+                <i
+                  class="star-margin fa-sharp fa-solid fa-star"
+                  style="color: #ffd43b"
+                ></i>
+                <i
+                  class="star-margin fa-sharp fa-solid fa-star"
+                  style="color: #ffd43b"
+                ></i>
+                <i
+                  class="star-margin fa-sharp fa-solid fa-star"
+                  style="color: #ffd43b"
+                ></i>
+                <i
+                  class="star-margin fa-sharp fa-solid fa-star"
+                  style="color: #ffd43b"
+                ></i>
+                <i
+                  class="star-margin fa-sharp fa-solid fa-star-half"
+                  style="color: #ffd43b"
+                ></i>
+                <span>4.5/5</span>
+              </span>
+              <p class="rate">&#36;120</p>
+              <button class="view-details-btn">View Details</button>
+               </div>
+              </div>
+            
+            
+            <div class="col-md-3 col-sm-6 mb-4">
+                <img src="assets/images/b-jeans.png" alt="Image 2" class="img-fluid">
+                <div class="product-details">
+                <p class="product-name">SKINNY FIT JEANS</p>
+                <span>
+                <i
+                  class="star-margin fa-sharp fa-solid fa-star"
+                  style="color: #ffd43b"
+                ></i>
+                <i
+                  class="star-margin fa-sharp fa-solid fa-star"
+                  style="color: #ffd43b"
+                ></i>
+                <i
+                  class="star-margin fa-sharp fa-solid fa-star"
+                  style="color: #ffd43b"
+                ></i>
+                <i
+                  class="star-margin fa-sharp fa-solid fa-star"
+                  style="color: #ffd43b"
+                ></i>
+                <i
+                  class="star-margin fa-sharp fa-solid fa-star-half"
+                  style="color: #ffd43b"
+                ></i>
+                <span>4.5/5</span>
+              </span>
+              <p class="rate">
+                &#36;240 <strike class="strike-price">&#36;260</strike>
+                <button class="discount">-20%</button>
+              </p>
+              <button class="view-details-btn">View Details</button>
+            </div>
+            </div>
+           </div>
+
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="container happy-cus-section">
+        <h1>OUR HAPPY CUSTOMERS</h1>
+        <div class="arrow-corner">
+          <img src="assets/images/arrow-down-bold 1.png" alt="arrow" />
+          <img src="assets/images/arrow-down-bold 2.png" alt="arrow" />
+        </div>
+      </div>  
+      <div class="container customer-reivew-section">
+        <div class="row">
+          <div class=" col-md-4 col-12 review-of-customers">
+            <span><i
+                    class="star-margin fa-sharp fa-solid fa-star"
+                    style="color: #ffd43b"
+                  ></i>
+                  <i
+                    class="star-margin fa-sharp fa-solid fa-star"
+                    style="color: #ffd43b"
+                  ></i>
+                  <i
+                    class="star-margin fa-sharp fa-solid fa-star"
+                    style="color: #ffd43b"
+                  ></i>
+                  <i
+                    class="star-margin fa-sharp fa-solid fa-star"
+                    style="color: #ffd43b"
+                  ></i>
+                  <i
+                    class="star-margin fa-sharp fa-solid fa-star"
+                    style="color: #ffd43b"
+                  ></i>
+                  </span>
+                  <span><h4>Sarah M. <i class="fa-solid fa-circle-check" style="color: #01ab31;"></i></h4></span>
+                  <p>"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
+          </div>
+        <div class="col-md-4 col-12 review-of-customers">
+             <i
+                  class="star-margin fa-sharp fa-solid fa-star"
+                  style="color: #ffd43b"
+                ></i>
+                <i
+                  class="star-margin fa-sharp fa-solid fa-star"
+                  style="color: #ffd43b"
+                ></i>
+                <i
+                  class="star-margin fa-sharp fa-solid fa-star"
+                  style="color: #ffd43b"
+                ></i>
+                <i
+                  class="star-margin fa-sharp fa-solid fa-star"
+                  style="color: #ffd43b"
+                ></i>
+                <i
+                  class="star-margin fa-sharp fa-solid fa-star"
+                  style="color: #ffd43b"
+                ></i>
+                <h4>Alex K. <i class="fa-solid fa-circle-check" style="color: #01ab31;"></i></h4>
+                <p>"Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.”</p>
+        </div>
+        <div class="col-md-4 col-12 review-of-customers">
+             <i
+                  class="star-margin fa-sharp fa-solid fa-star"
+                  style="color: #ffd43b"
+                ></i>
+                <i
+                  class="star-margin fa-sharp fa-solid fa-star"
+                  style="color: #ffd43b"
+                ></i>
+                <i
+                  class="star-margin fa-sharp fa-solid fa-star"
+                  style="color: #ffd43b"
+                ></i>
+                <i
+                  class="star-margin fa-sharp fa-solid fa-star"
+                  style="color: #ffd43b"
+                ></i>
+                <i
+                  class="star-margin fa-sharp fa-solid fa-star"
+                  style="color: #ffd43b"
+                ></i>
+                <h4>James L. <i class="fa-solid fa-circle-check" style="color: #01ab31;"></i></h4>
+                <p>"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.”</p>
+        </div> 
+      </div>
+    </div>
+    
+      <div class="container-fluid">
+        <div class="footer container about d-flex" >
+            <div><img class="logo" src="assets/images/Group 21.png" alt="loading"></div>
+            <div class="about-content">
+                <span>About</span>
+                <span>Associate Seller</span>
+            </div>
+            <div class="social-contact">
+                <span><i class="fa-brands fa-twitter"></i></span>
+                <span><i class="fa-brands fa-facebook-f"></i></span>
+                <span><i class="fa-brands fa-instagram"></i></span>
+            </div>
+        </div>
+        <hr>
+        <div class=" text-center copyright-content">
+          <p>VastralayBazar &#169; 2000-2024, All Rights Reserved</p>
+        </div>
+      </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
