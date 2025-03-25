@@ -109,12 +109,7 @@ body {
     margin-top: 4rem;
 }
 
-.review {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    justify-content: space-between;
-    margin-top: 2rem;
-}
+
 
 .review>div {
     margin-right: 2rem;
